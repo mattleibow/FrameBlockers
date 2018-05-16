@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:FrameBlockers"
+             x:Class="FrameBlockers.MainPage">
+
+    <StackLayout Orientation="Vertical">
+
+        <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <Label Text="In Frame:" />
+            <Frame VerticalOptions="FillAndExpand">
+                <local:SignaturePadCanvasView BackgroundColor="Azure" />
+            </Frame>
+        </StackLayout>
+
+        <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <Label Text="No Frame:" />
+            <Grid VerticalOptions="FillAndExpand" Padding="20">
+                <local:SignaturePadCanvasView BackgroundColor="Azure" />
+            </Grid>
+        </StackLayout>
+
+    </StackLayout>
+
+</ContentPage>
